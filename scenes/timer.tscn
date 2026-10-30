@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d10a3jcwce8y4"]
+
+[ext_resource type="Script" uid="uid://dul3nxrbyc0be" path="res://timer.gd" id="1_srplv"]
+
+[node name="Timer" type="Timer" unique_id=1127521654]
+script = ExtResource("1_srplv")
+
+[node name="SpinBox" type="SpinBox" parent="." unique_id=695873028]
+offset_left = 425.0
+offset_top = 295.0
+offset_right = 585.0
+offset_bottom = 352.0
+
+[connection signal="value_changed" from="SpinBox" to="." method="_on_spin_box_value_changed"]
